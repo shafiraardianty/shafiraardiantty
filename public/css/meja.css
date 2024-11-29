@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background-color: #e0e0e0;
+    padding: 10px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar button {
+    padding: 10px;
+    border: none;
+    background-color: #d3d3d3;
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 20px;
+    width: 85%;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 5px;
+  }
+  
+  .buttons {
+    grid-column: span 2;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button.save {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.edit {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }

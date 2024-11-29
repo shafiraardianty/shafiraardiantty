@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('pelnggans', function (Blueprint $table) {
             $table->id();
-            $table->interger('id_pelanggan');
-            $table->setring('nama_pelanggan');
-            $table->enum('jenis_kelamin');
-            $table->setring('no_hp');
-            $table->setring('alamat');
+            $table->integer('id_pelanggan');
+            $table->string('nama_pelanggan');
+            $table->enum('jenis_kelamin', ['l', 'p']);
+            $table->string('no_hp');
+            $table->string('alamat');
         });
     }
 
@@ -29,3 +29,4 @@ return new class extends Migration
         Schema::dropIfExists('pelnggans');
     }
 };
+   

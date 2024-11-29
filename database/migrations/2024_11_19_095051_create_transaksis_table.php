@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer('id_transaksi');
             $table->integer('id_pesanan');
-            $table->interger('Total');
-            $table->interger('Bayar');
+            $table->integer('Total');
+            $table->integer('Bayar');
         });
     }
 
